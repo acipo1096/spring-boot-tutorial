@@ -1,9 +1,16 @@
 package com.example.demo.student;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
+// StudentService should be a "Spring Bean"
+// We can designate this as a "Service" "Component"
+// Means the same thing, different semantics
+@Service
 public class StudentService {
     // We are now building our Service Layer
     // This is where business logic is hosted
